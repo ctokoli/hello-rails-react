@@ -2,6 +2,6 @@ Rails.application.routes.draw do
 
   root 'root#index'
   namespace :api do
-    get '/index', to: 'greetings#index'
+    get '/greeting', to: 'greetings#index'
   end
 end
