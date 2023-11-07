@@ -18,6 +18,7 @@ const greetingSlice = createSlice({
         greeting: '',
         status: null,
     },
+    
     extraReducers: (builder) => {
         builder.addCase(fetchGreeting.pending, (state) => {
             state.status = "loading";
